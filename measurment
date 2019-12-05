@@ -1,0 +1,75 @@
+loop = 1
+while loop == 1:
+   print("What would you like to convert:")
+   print("1- Mass")
+   print("2- Length")
+   print("3- Quit")
+   convert = input("Enter your choice:")
+   if convert == 1:   
+         print 
+         print("From:")
+         print("1- Pound") 
+         print("2- Ounce")
+         from01 = input("Enter your choice:")
+         if from01 >= 3:
+            print("invalid choice.")
+            print 
+         if from01 == 1 or from01 == 2:
+            print 
+            print("To:")
+            print("1- Pound") 
+            print("2- Ounce")
+            to01 = input("Enter your choice:")
+            if to01 == from01:
+               print("No conversion needed for the same unit.")
+               print 
+            elif to01 >= 3:
+               print("Invalid choices")
+               print 
+         
+            else:
+               value01 = input("Enter the value:")   
+               if from01 == 1:
+                  print(value01),(" Pound(s) is "),(value01 * 16),("Ounce(s)")
+                  print 
+               elif from01 == 2:
+                  print(value01),(" Ounce(s) is "),(value01 * 0.0625),("Pound(s)")
+                  print 
+   
+   if convert == 2:
+      print 
+      print("From:")
+      print("1- Mile") 
+      print("2- Inch")
+      from02 = input("Enter your choice:")
+      if from02 >= 3:
+         print("invalid choice.")
+         print 
+      if from02 == 1 or from02 == 2:  
+         print 
+         print("From:")
+         print("1- Mile") 
+         print("2- Inch")
+         to02 = input("Enter your choice:")
+         if to02 == from02:
+            print("No conversion needed for the same unit.")
+            print 
+         elif to02 >= 3:
+            print("Invalid choices")
+            print 
+         
+         else:
+            value02 = input("Enter the value:")
+            if from02 == 1:
+               print(value02),(" Mile(s) is "),(value02 * 63360),("Inche(s)")
+               print 
+            elif from02 == 2:
+               print(value02),(" Inche(s) is "),(value02 * 0.000015783),("Mile(s)")
+               print 
+   
+   
+   if convert == 3:
+      print("Thanks for using our application,Bye!")
+      break
+
+
